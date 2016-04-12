@@ -19,15 +19,8 @@ QUnit.module("Color Change", function() {
   
     //CHANGE COLOR
   test("changeColor()", function(){
-  ok(typeof changeColor !== "undefined", "changeColor() is properly defined.");
-    
-    var spy = sinon.spy(changeColor);
-    
-    $("#changer").trigger("click");
-    changeColor();
-    ok(spy.callCount > 0, "Change color should be called when the changer button is clicked");
-    
-    expect(2);
+    ok(typeof changeColor !== "undefined", "changeColor() is properly defined.");
+    expect(1);
   });
 
   //ADD COLOR
